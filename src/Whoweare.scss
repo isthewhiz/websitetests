@@ -1,9 +1,9 @@
 @import "./theme.scss";
 
 .nav-outer-container {
-  width: 100%;
+  width: 90%;
+  margin: 20px auto 0 auto;
   color: $ui-red;
-  border-bottom: 1px solid $ui-black;
-  box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5); 
-
+  border: 1px solid $ui-black;
+  box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
