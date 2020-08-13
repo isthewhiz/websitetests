@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import * as pandaImage from "./assets/panda.jpg.jpg";
-import "./Whoweare.scss"; // this should match the case of the component -- Whoweare.scss
+import "./Whoweare.scss";
 
 // keep you config out of your components
 // this can be in its own fiile
@@ -33,10 +33,17 @@ class Whoweare extends Component {
                   src={item.photo}
                   alt="An image of a collective member."
                 ></img>
-                <ul>
+                {/* To make a list do this below*/}
+                {/*<ul>
+                  <li>{item.bioName}</li>
+                  <li>{item.text}</li>
+                </ul> 
+                */}
+                {/* To make it seemless do this below*/}
+                <div>
                   {item.bioName}
                   {item.text}
-                </ul>
+                </div>
               </div>
             ))}
           </ul>
@@ -47,64 +54,3 @@ class Whoweare extends Component {
 }
 
 export default Whoweare;
-
-{
-  /* <nav className="nav-outer-container">
-<h1>
-  Hello,{this.props.first} {this.props.last}
-</h1>
-<div></div>
-<div>
- <collective>
-  <ul id= "collective">
-   {collective.map((tweet) =>(
-     <ul>
-       {tweet.photo}
-       {tweet.bioName}
-       {tweet.text}
-     </ul>
-   ))} 
-  </ul> 
- </collective> 
-</div>
-</nav> */
-}
-
-/*
-class Biopic extends Component{
-  render(){ return(
-
-        <img src={tom} />
-    )
-  }
-}
-class Lable extends Component{
-  render(){
-    return(
-         <h1>
-          Hello,{this.props.first} {this.props.last}
-        </h1>
-    )
-  }
-}
-class Bio extends Component{
-  render(){
-    return(
-         <h1>
-          Hello,{this.props.first} {this.props.last}
-        </h1>
-    )
-  }
-}
-class Badge extends Component{
-  render(){
-    return(
-      <div>
-        <Biopic img={this.props.user.img}/>
-        <Lable name={this.props.user.name}/>
-        <Bio info={this.props.user.info}/>
-      </div>
-    )
-  }
-}
-*/
