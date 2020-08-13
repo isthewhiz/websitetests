@@ -1,0 +1,24 @@
+.nav-outer-container {
+  height: 56px;
+  width: 100%;
+  /*
+  background-color: $ui-white;
+  border-bottom: 1px solid $ui-black;
+  box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5); 
+  */
+}
+
+.profile-content {
+  height: 80;
+  width: 100%;
+  max-width: 180px;
+}
+.nav-inner-container {
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+}

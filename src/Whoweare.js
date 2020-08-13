@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import "./whoweare.scss";
+import * as pandaImage from "./assets/panda.jpg.jpg";
+import "./Whoweare.scss"; // this should match the case of the component -- Whoweare.scss
 
+// keep you config out of your components
+// this can be in its own fiile
 const collectiveConfig = [
   {
     photo:
@@ -11,8 +14,7 @@ const collectiveConfig = [
   },
 
   {
-    photo:
-      "https://mappingaction.files.wordpress.com/2019/12/tim3-e1575161384528.jpg?w=300&h=287",
+    photo: pandaImage,
     bioName: "Tim Hitchins",
     text:
       " is a GIS developer with an obsession for interactive mapping, data analytics and everything in between. Since his early 20s, Tim has participated in various grassroots social justice, environmental and animal liberation causes. These days Tim spends his time working with community partners on projects that bridge the gap between analytics and activism. Tim graduated with an MS in Geography from Portland State University and is currently a GIS instructor at Portland Community College.",
