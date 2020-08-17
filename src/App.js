@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Whoweare from './whoweare'
+import Whoweare from './Whoweare'
 
 class App extends Component {
   render() {
